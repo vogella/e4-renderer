@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="extension" nsURI="http://www.vogella.de/ui/e4/extension" nsPrefix="extension">
+  <eClassifiers xsi:type="ecore:EClass" name="MyMap" eSuperTypes="platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/Context platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/UILabel platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/basic/PartSashContainerElement platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/basic/Part"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MyPart">
+    <eGenericSuperTypes eClassifier="ecore:EClass platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/basic/Part"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/ElementContainer">
+      <eTypeArguments eClassifier="#//MyMap"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_iQb6kH3bEd-B7cg7aErIEA" elementId="org.eclipse.e4.ide.application"
+xmlns:extension="http://www.moduig.org/ui/e4/extension" >
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_iQb6oX3bEd-B7cg7aErIEA" label="de.vogella.e4.renderer.maps" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_iQb6qX3bEd-B7cg7aErIEA">
+      <children xsi:type="advanced:Perspective" xmi:id="_iQb6qn3bEd-B7cg7aErIEA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_iQb6q33bEd-B7cg7aErIEA">
+          <children xsi:type="basic:PartStack" xmi:id="_iQb6rH3bEd-B7cg7aErIEA">
+          	<!-- First Part -->
+						<children xsi:type="extension:MyPart" xmi:id="_2P4QMGjBEd-aouR9UfDgRw"
+							elementId="partID" label="My Part">													
+							<children xsi:type="extension:MyMap" label="my Map"></children>
+						</children>
+						
+
+		  </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_iQb6on3bEd-B7cg7aErIEA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_iQb6o33bEd-B7cg7aErIEA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_iQb6pH3bEd-B7cg7aErIEA" label="Open" iconURI="platform:/plugin/de.vogella.e4.renderer.maps/icons/sample.gif" command="_iQb6mH3bEd-B7cg7aErIEA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_iQb6pX3bEd-B7cg7aErIEA" label="Save" iconURI="platform:/plugin/de.vogella.e4.renderer.maps/icons/save_edit.gif" command="_iQb6m33bEd-B7cg7aErIEA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_iQb6pn3bEd-B7cg7aErIEA" label="Quit" command="_iQb6lH3bEd-B7cg7aErIEA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_iQb6p33bEd-B7cg7aErIEA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_iQb6qH3bEd-B7cg7aErIEA" label="About" command="_iQb6nn3bEd-B7cg7aErIEA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_iQb6rX3bEd-B7cg7aErIEA">
+      <children xsi:type="menu:ToolBar" xmi:id="_iQb6rn3bEd-B7cg7aErIEA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_iQb6r33bEd-B7cg7aErIEA" iconURI="platform:/plugin/de.vogella.e4.renderer.maps/icons/sample.gif" command="_iQb6mH3bEd-B7cg7aErIEA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_iQb6sH3bEd-B7cg7aErIEA" iconURI="platform:/plugin/de.vogella.e4.renderer.maps/icons/save_edit.gif" command="_iQb6m33bEd-B7cg7aErIEA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_iQb6lX3bEd-B7cg7aErIEA" contributionURI="platform:/plugin/de.vogella.e4.renderer.maps/handlers.QuitHandler" command="_iQb6lH3bEd-B7cg7aErIEA"/>
+  <handlers xmi:id="_iQb6mX3bEd-B7cg7aErIEA" contributionURI="platform:/plugin/de.vogella.e4.renderer.maps/handlers.OpenHandler" command="_iQb6mH3bEd-B7cg7aErIEA"/>
+  <handlers xmi:id="_iQb6nH3bEd-B7cg7aErIEA" contributionURI="platform:/plugin/de.vogella.e4.renderer.maps/handlers.SaveHandler" command="_iQb6m33bEd-B7cg7aErIEA"/>
+  <handlers xmi:id="_iQb6n33bEd-B7cg7aErIEA" contributionURI="platform:/plugin/de.vogella.e4.renderer.maps/handlers.AboutHandler" command="_iQb6nn3bEd-B7cg7aErIEA"/>
+  <bindingTables xmi:id="_iQb6ln3bEd-B7cg7aErIEA" bindingContextId="org.eclipse.ui.contexts.dialogAndWindow">
+    <bindings xmi:id="_iQb6l33bEd-B7cg7aErIEA" keySequence="Ctrl+Q" command="_iQb6lH3bEd-B7cg7aErIEA"/>
+    <bindings xmi:id="_iQb6mn3bEd-B7cg7aErIEA" keySequence="Ctrl+O" command="_iQb6mH3bEd-B7cg7aErIEA"/>
+    <bindings xmi:id="_iQb6nX3bEd-B7cg7aErIEA" keySequence="Ctrl+S" command="_iQb6m33bEd-B7cg7aErIEA"/>
+    <bindings xmi:id="_iQb6oH3bEd-B7cg7aErIEA" keySequence="Ctrl+A" command="_iQb6nn3bEd-B7cg7aErIEA"/>
+  </bindingTables>
+  <rootContext xmi:id="_iQb6kX3bEd-B7cg7aErIEA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_iQb6kn3bEd-B7cg7aErIEA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_iQb6k33bEd-B7cg7aErIEA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <bindingContexts>org.eclipse.ui.contexts.dialogAndWindow</bindingContexts>
+  <commands xmi:id="_iQb6lH3bEd-B7cg7aErIEA" elementId="de.vogella.e4.renderer.maps.quitCommand" commandName="quitCommand"/>
+  <commands xmi:id="_iQb6mH3bEd-B7cg7aErIEA" elementId="de.vogella.e4.renderer.maps.openCommand" commandName="openCommand"/>
+  <commands xmi:id="_iQb6m33bEd-B7cg7aErIEA" elementId="de.vogella.e4.renderer.maps.saveCommand" commandName="saveCommand"/>
+  <commands xmi:id="_iQb6nn3bEd-B7cg7aErIEA" elementId="de.vogella.e4.renderer.maps.aboutCommand" commandName="aboutCommand"/>
+</application:Application>

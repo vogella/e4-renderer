@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.vogella.e4.model.extension;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: extension,
+ extension.impl,
+ extension.util
+Require-Bundle: org.eclipse.e4.ui.model.workbench;visibility:=reexport,
+ org.eclipse.e4.core.contexts;bundle-version="1.1.0"
+Bundle-ActivationPolicy: lazy

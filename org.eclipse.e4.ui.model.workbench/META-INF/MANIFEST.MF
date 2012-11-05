@@ -1,0 +1,857 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench;singleton:=true
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.ui.git;path="bundles/org.eclipse.e4.ui.model.work
+ bench";tag=v20120523-1955
+Bundle-Activator: org.eclipse.e4.ui.model.application.impl.MWorkbenchM
+ odelActivator$Implementation
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.7.0,4.0.0)
+ ",org.eclipse.emf.ecore;bundle-version="[2.6.0,3.0.0)";visibility:=re
+ export,org.eclipse.emf.ecore.xmi;bundle-version="[2.6.0,3.0.0)";visib
+ ility:=reexport,org.eclipse.e4.core.services;bundle-version="0.9.0",o
+ rg.eclipse.e4.core.contexts;bundle-version="1.0.0",org.eclipse.core.c
+ ommands;bundle-version="[3.5.0,4.0.0)",org.eclipse.e4.core.di;bundle-
+ version="1.0.0"
+Export-Package: org.eclipse.e4.ui.model;x-friends:="org.eclipse.e4.ui.
+ workbench,org.eclipse.e4.ui.workbench.swt,org.eclipse.ui.workbench",o
+ rg.eclipse.e4.ui.model.application; x-friends:="org.eclipse.e4.ui.wor
+ kbench,  org.eclipse.e4.ui.workbench.addons.swt,  org.eclipse.e4.ui.w
+ orkbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclips
+ e.ui.workbench,  org.eclipse.ui.workbench.compatibility",org.eclipse.
+ e4.ui.model.application.commands; x-friends:="org.eclipse.e4.ui.model
+ .workbench.edit,  org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.wor
+ kbench.renderers.swt,  org.eclipse.ui.workbench",org.eclipse.e4.ui.mo
+ del.application.commands.impl; x-friends:="org.eclipse.e4.ui.model.wo
+ rkbench.edit,  org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.workbe
+ nch.swt,  org.eclipse.ui.workbench",org.eclipse.e4.ui.model.applicati
+ on.commands.util;x-internal:=true,org.eclipse.e4.ui.model.application
+ .descriptor.basic;x-friends:="org.eclipse.e4.ui.workbench,org.eclipse
+ .e4.ui.workbench.swt,org.eclipse.ui.workbench",org.eclipse.e4.ui.mode
+ l.application.descriptor.basic.impl;x-friends:="org.eclipse.e4.ui.wor
+ kbench,org.eclipse.e4.ui.workbench.swt,org.eclipse.ui.workbench",org.
+ eclipse.e4.ui.model.application.descriptor.basic.util;x-internal:=tru
+ e,org.eclipse.e4.ui.model.application.impl;x-friends:="org.eclipse.e4
+ .ui.model.workbench.edit,org.eclipse.e4.ui.workbench,org.eclipse.e4.u
+ i.workbench.swt",org.eclipse.e4.ui.model.application.ui; x-friends:="
+ org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.workbench.addons.swt,
+   org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workb
+ ench.swt,  org.eclipse.ui.workbench",org.eclipse.e4.ui.model.applicat
+ ion.ui.advanced; x-friends:="org.eclipse.e4.ui.model.workbench.edit, 
+  org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.workbench.addons.swt
+ ,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.work
+ bench.swt,  org.eclipse.ui.workbench",org.eclipse.e4.ui.model.applica
+ tion.ui.advanced.impl; x-friends:="org.eclipse.e4.ui.workbench,  org.
+ eclipse.e4.ui.workbench.addons.swt,  org.eclipse.e4.ui.workbench.swt,
+   org.eclipse.ui.workbench",org.eclipse.e4.ui.model.application.ui.ad
+ vanced.util;x-internal:=true,org.eclipse.e4.ui.model.application.ui.b
+ asic; x-friends:="org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.wor
+ kbench.addons.swt,  org.eclipse.e4.ui.workbench.renderers.swt,  org.e
+ clipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.u
+ i.workbench.compatibility",org.eclipse.e4.ui.model.application.ui.bas
+ ic.impl; x-friends:="org.eclipse.e4.ui.model.workbench.edit,  org.ecl
+ ipse.e4.ui.workbench,  org.eclipse.e4.ui.workbench.addons.swt,  org.e
+ clipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench",org.eclipse.e4
+ .ui.model.application.ui.basic.util;x-internal:=true,org.eclipse.e4.u
+ i.model.application.ui.impl; x-friends:="org.eclipse.e4.ui.model.work
+ bench.edit,  org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.workbenc
+ h.swt,  org.eclipse.ui.workbench",org.eclipse.e4.ui.model.application
+ .ui.menu; x-friends:="org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui
+ .workbench.addons.swt,  org.eclipse.e4.ui.workbench.renderers.swt,  o
+ rg.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench",org.eclips
+ e.e4.ui.model.application.ui.menu.impl; x-friends:="org.eclipse.e4.ui
+ .model.workbench.edit,  org.eclipse.e4.ui.workbench,  org.eclipse.e4.
+ ui.workbench.addons.swt,  org.eclipse.e4.ui.workbench.renderers.swt, 
+  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench",org.ecli
+ pse.e4.ui.model.application.ui.menu.util;x-internal:=true,org.eclipse
+ .e4.ui.model.application.ui.util;x-internal:=true,org.eclipse.e4.ui.m
+ odel.application.util;x-internal:=true,org.eclipse.e4.ui.model.fragme
+ nt;x-friends:="org.eclipse.e4.ui.workbench",org.eclipse.e4.ui.model.f
+ ragment.impl;x-friends:="org.eclipse.e4.ui.workbench",org.eclipse.e4.
+ ui.model.fragment.util;x-internal:=true,org.eclipse.e4.ui.model.inter
+ nal;x-friends:="org.eclipse.e4.ui.workbench"
+Bundle-Version: 0.10.1.v20120523-1955
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/AreaImpl.cl
+ ass
+SHA1-Digest: tgvcPqisdQ2bby8gg1arngZfPZ8=
+
+Name: org/eclipse/e4/ui/model/application/commands/MCategory.class
+SHA1-Digest: OsajOzQHYgqk3JgPMlfgYDyohTA=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/InputPartImpl.
+ class
+SHA1-Digest: E/mtjJ3aLrjyQGm6PkB2kpPLJAU=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/util/MenuSwitch.clas
+ s
+SHA1-Digest: +oP6a6nai++kqZ8MtKYUsJPyDWw=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/CategoryImpl.c
+ lass
+SHA1-Digest: iXt1Qobw6Dgu2HeI2QbolCjYcsw=
+
+Name: org/eclipse/e4/ui/model/fragment/util/FragmentAdapterFactory$1.c
+ lass
+SHA1-Digest: o7zf2+2nbdBmdCPTFBY/Av9NYnM=
+
+Name: org/eclipse/e4/ui/model/LocalizationHelper.class
+SHA1-Digest: 74STPeVNBcT9hQMqu5AoGM/uDdw=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/MBasicFacto
+ ry.class
+SHA1-Digest: 07Ajfx0zw7nrp5JrtcbXCE8kgBE=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/impl/BasicF
+ actoryImpl.class
+SHA1-Digest: O+Nk5BtknL/Tzhth/h7VUt0nZvU=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenuContributions.c
+ lass
+SHA1-Digest: nIpRZce1L5BpvJ6simOAawBu/dQ=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MDirectMenuItem.clas
+ s
+SHA1-Digest: C2rpdAEx+pQVlEUtvhi+/e9V0P4=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/DirectMenuItemI
+ mpl.class
+SHA1-Digest: 92L7iC2mPS4TQMWaW2miDp5mvh4=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/BindingTableIm
+ pl.class
+SHA1-Digest: c5+FS2mONHiuVgypIOq8EYFJ6g0=
+
+Name: org/eclipse/e4/ui/model/application/ui/MDirtyable.class
+SHA1-Digest: mLOt+2H9T2Enk5QEBCEK1KNE/CI=
+
+Name: org/eclipse/e4/ui/model/application/ui/MContext.class
+SHA1-Digest: smH/gRTD9/DsqK+5b+juMKkYNt0=
+
+Name: org/eclipse/e4/ui/model/application/MContribution.class
+SHA1-Digest: PrITf5FRAXusaCJcY+IlV4Y36J8=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/RenderedMenuIte
+ mImpl.class
+SHA1-Digest: M9kXZfE93+Ba9Zp3ViLo9tBqYsg=
+
+Name: org/eclipse/e4/ui/model/application/ui/util/UiAdapterFactory.cla
+ ss
+SHA1-Digest: il4UyB4JyLTlBkaX94SToAvDkJw=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/ItemType.class
+SHA1-Digest: QdMvKlOeeaggAS36Po+FD2mzFls=
+
+Name: org/eclipse/e4/ui/model/application/MApplication.class
+SHA1-Digest: +G52BKTEt8Kyy2o3lWxVVeogrMU=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MTrimmedWindow.clas
+ s
+SHA1-Digest: qSp/xBU/z0yhvaqLYcld67RN7qw=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/util/BasicA
+ dapterFactory$1.class
+SHA1-Digest: PObHPOVYoOdhsyQeXghyZVm1PmI=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MRenderedMenu.class
+SHA1-Digest: twAIClwVsXyzaTiK3GGSSee/k5k=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/RenderedMenuImp
+ l.class
+SHA1-Digest: +ukACqvmmHp2HHs3JdtR9FGPFHw=
+
+Name: org/eclipse/e4/ui/model/fragment/util/FragmentSwitch.class
+SHA1-Digest: 9xYCqb5FSrsb74S+/SOdlrJN+no=
+
+Name: org/eclipse/e4/ui/model/application/ui/MGenericTrimContainer.cla
+ ss
+SHA1-Digest: CDV4mnJP8Ez2xfvRA/KpPjuD3MI=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/GenericTrimContainer
+ Impl.class
+SHA1-Digest: gLqwZ4V5S4S5K0isyjZApR8f8eg=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/CommandImpl.cl
+ ass
+SHA1-Digest: 75uv5p050PMHaTIczniJHK68RyA=
+
+Name: org/eclipse/e4/ui/model/application/ui/MUiFactory.class
+SHA1-Digest: 2cZQ4AANj18ogsLrM3331CIl4mI=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/InternalItemType.cla
+ ss
+SHA1-Digest: fUyU2k3zXYPppKNKwNyDuxp+2Vs=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerE
+ lement.class
+SHA1-Digest: /p6KB/yybWvs+WP45J3kNK1XXDc=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuContributio
+ nImpl.class
+SHA1-Digest: TMIYVEk9McX2wFy9beQ3u8dqAvs=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MStackElement.class
+SHA1-Digest: AMp7FNwdQzjZgnqVsPXt8BdjyAY=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MOpaqueMenuItem.clas
+ s
+SHA1-Digest: BZpYy8ZariFKeh6vqVXhj1CEa94=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/impl/BasicP
+ ackageImpl.class
+SHA1-Digest: Z5kzePpW53ksgIxquc7YHqAnsy8=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ $1.class
+SHA1-Digest: 5ukBbkY7hYJEUIZDXY+JI789t4k=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/OpaqueMenuItemI
+ mpl.class
+SHA1-Digest: eWcVqGB6XJHdqNNxUPFgTMs+cFs=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/util/MenuAdapterFact
+ ory.class
+SHA1-Digest: nqyEVQH/6WQ48a9QYrHJyse3uBI=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/MPartDescri
+ ptorContainer.class
+SHA1-Digest: beVTwFUkmKQfx0UHOyIfjKnTGk8=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/OpaqueMenuImpl.
+ class
+SHA1-Digest: CcfKcojT+WNOqd/1SDkToXParPw=
+
+Name: org/eclipse/e4/ui/model/application/commands/MCommandsFactory.cl
+ ass
+SHA1-Digest: lHLbAo4jj6r3YywSHrv8DjOI7Qs=
+
+Name: org/eclipse/e4/ui/model/application/util/ApplicationSwitch.class
+SHA1-Digest: MIMZ37ByaXL1WnOCmsdNmtYi56E=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/util/BasicAdapterFa
+ ctory$1.class
+SHA1-Digest: xO/cn4xYdcaFRtrgzPQNFcVY3+o=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ToolBarImpl.cla
+ ss
+SHA1-Digest: QhMpBtY7dIteGUqv/CaZvz7H9VA=
+
+Name: org/eclipse/e4/ui/model/application/ui/InternalSideValue.class
+SHA1-Digest: sZm+9mWPYLB5LXkblrK3YzgtNqs=
+
+Name: org/eclipse/e4/ui/model/application/impl/StringToObjectMapImpl.c
+ lass
+SHA1-Digest: mvr5cUyPoitgJ+ebJdBPdpwTg9s=
+
+Name: org/eclipse/e4/ui/model/application/ui/MCoreExpression.class
+SHA1-Digest: THaS9LBwI0skYNA/KDm/xUVWRyg=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MTrimContributions.c
+ lass
+SHA1-Digest: q77QAlrP8nlpxgSITQAeHGfjYUs=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/CoreExpressionImpl.c
+ lass
+SHA1-Digest: KNjG0jqB+nhIksgFji5OfohX9ik=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenuFactory.class
+SHA1-Digest: qKtl46H+ra1roMWNLncr6XHxCSo=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MHandledMenuItem.cla
+ ss
+SHA1-Digest: 6G+Pyqo3M9GavBorw8m0aphLeSM=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ .class
+SHA1-Digest: S+i6tlSIGn0dGsbg1mErs9NM7as=
+
+Name: org/eclipse/e4/ui/model/fragment/util/FragmentAdapterFactory.cla
+ ss
+SHA1-Digest: Q3hqj5flffggv1B59b3k+4ld7ow=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolItem.class
+SHA1-Digest: roZJHXRSzdO6kcPs+nJmZZKRlTw=
+
+Name: org/eclipse/e4/ui/model/application/commands/MCommand.class
+SHA1-Digest: 5wOf2ygc82sslNPeoPUxl+/4Wh0=
+
+Name: model/E4Dsl.xtext
+SHA1-Digest: 2kPZuFYWAK7djZK7kfHg+1/kN7s=
+
+Name: org/eclipse/e4/ui/model/application/ui/MUILabel.class
+SHA1-Digest: 42/pIKzP0uzY6FYl4jy0ufqCFCM=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/DirectToolItemI
+ mpl.class
+SHA1-Digest: 00QVISyvndJQkfZI1pL0NAk4qzE=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/util/BasicSwitch.cl
+ ass
+SHA1-Digest: u0BlNIkjtOYG0pMqleeCeAvhbHs=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/MPartDescri
+ ptor.class
+SHA1-Digest: kwY1MMDOoPXd1Yw52skh5pfbADM=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/UIElementImpl.class
+SHA1-Digest: p93fJCMjbrfXwTZfTH7/C4ryouM=
+
+Name: org/eclipse/e4/ui/model/application/commands/MBindingTable.class
+SHA1-Digest: zP80UrdZtPlS39K4NLHVd5Usadw=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/util/BasicS
+ witch.class
+SHA1-Digest: f1RtGR8pTSlV+ow/giEANW3jGrY=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenu.class
+SHA1-Digest: bcEjKk8uLPHXQRkZnav+IacfGpg=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ToolBarContribu
+ tionImpl.class
+SHA1-Digest: QIZy0aLoLk7VhhqZ81ssUiQRqmA=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/CommandsPackag
+ eImpl$Literals.class
+SHA1-Digest: Wa5zyzyYRXArO3xrddb6+y3iWxU=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolBarElement.clas
+ s
+SHA1-Digest: Rh1hN58ex7M5iJd86qmA+buZy8Y=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/CommandsFactor
+ yImpl.class
+SHA1-Digest: O/T4sbXKVU2xwgoiMggG0awQ65U=
+
+Name: org/eclipse/e4/ui/model/application/impl/ApplicationElementImpl.
+ class
+SHA1-Digest: 040YQe6lc7Iaggp5HtQreTtCHRY=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MWindowElement.clas
+ s
+SHA1-Digest: 6rwYse5X7WmMbtG7sE07p3BEcV4=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuPackageImpl
+ $Literals.class
+SHA1-Digest: Oevsvg9KgtijAt96JseEUxCua6I=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/BasicPackageIm
+ pl$Literals.class
+SHA1-Digest: qfwpvrOGipRz4xnBXjhItveKWQ4=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MRenderedMenuItem.cl
+ ass
+SHA1-Digest: 7XclhZhtQQd6SCR5JGz2YnL0tI4=
+
+Name: org/eclipse/e4/ui/model/application/commands/MParameter.class
+SHA1-Digest: uhCIHOCl5YVxY7Bf72qJWfv53A8=
+
+Name: org/eclipse/e4/ui/model/application/util/ApplicationAdapterFacto
+ ry.class
+SHA1-Digest: IEhNL57emEhvOIKKVjMynZKjq9U=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/util/AdvancedAda
+ pterFactory$1.class
+SHA1-Digest: RYjtj++qqeLDSd5QcZJYBle9rew=
+
+Name: org/eclipse/e4/ui/model/application/MApplicationFactory.class
+SHA1-Digest: Z7DTpcVMTgeOAX6b4cnt8jB1lsk=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MTrimElement.class
+SHA1-Digest: TfD4rAy0i2lSDgu9fN/2TqcQ280=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolBar.class
+SHA1-Digest: J2jWqVSdimuolcLFVjgBIzxCuR0=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuElementImpl
+ .class
+SHA1-Digest: TjtUUEZtwD1MPGWpEB5KZbWdDP0=
+
+Name: org/eclipse/e4/ui/model/application/commands/MCommandParameter.c
+ lass
+SHA1-Digest: nnUEpCFFwkobrfAlC0FDSoRm5gA=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/CommandParamet
+ erImpl.class
+SHA1-Digest: cdl+lI0eUPxEi9xYrRn54qZbw1g=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/e4/ui/model/application/impl/MWorkbenchModelActivato
+ r.class
+SHA1-Digest: xOairr9dSlJORCxujWMsTg1/20U=
+
+Name: org/eclipse/e4/ui/model/application/impl/MWorkbenchModelActivato
+ r$Implementation.class
+SHA1-Digest: PNfW/9uxadeJv/sxYCaR4tVXb9w=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/OpaqueMenuSepar
+ atorImpl.class
+SHA1-Digest: 0e8xitHR67g4OID9FzDhEROzhXc=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ToolControlImpl
+ .class
+SHA1-Digest: xOfct5E83KVpJEYP2hzG+lovbog=
+
+Name: org/eclipse/e4/ui/model/application/commands/MBindingContext.cla
+ ss
+SHA1-Digest: AoI7iWn4h7DE6rlhGKt5Lg6ac/Q=
+
+Name: org/eclipse/e4/ui/model/fragment/impl/StringModelFragmentImpl.cl
+ ass
+SHA1-Digest: +k88II9MIzHG+Mu/Zo0j8ZPkooc=
+
+Name: org/eclipse/e4/ui/model/application/ui/MInput.class
+SHA1-Digest: 19tB18HYSa9AzFRSvqF/WXFE93M=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MPopupMenu.class
+SHA1-Digest: v8yQmqu5O3lvHX7wD1qh74V0g/g=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/HandledMenuItem
+ Impl.class
+SHA1-Digest: 7FAWGbLiYsC3xp90IRJVmNDAyUc=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/OpaqueToolItemI
+ mpl.class
+SHA1-Digest: jHQ9RIQUBdJt3XnW8OEHTJQedN4=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenuContribution.cl
+ ass
+SHA1-Digest: GqIklTSF/wBcehdwP1BW1UXssaQ=
+
+Name: org/eclipse/e4/ui/model/fragment/impl/FragmentFactoryImpl.class
+SHA1-Digest: QoEIra+mrLSpuKEtKoHiGl1F2pk=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MTrimContribution.cl
+ ass
+SHA1-Digest: TO4PMDEh2N29NR7X+pTTqPzXpqI=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/TrimContributio
+ nImpl.class
+SHA1-Digest: UVzerENjRtoyKp7ReROKGTRnqlE=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/util/AdvancedSwi
+ tch.class
+SHA1-Digest: avLcTT1Ld0AFDapS47A3gNC866Y=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuSeparatorIm
+ pl.class
+SHA1-Digest: TeBghp2cpm4OqFnAqOIKsLCJ+m4=
+
+Name: org/eclipse/e4/ui/model/application/ui/MUIElement.class
+SHA1-Digest: /zSQaBK7VOHQcP7AKSEigkN/NI0=
+
+Name: org/eclipse/e4/ui/model/application/impl/StringToStringMapImpl.c
+ lass
+SHA1-Digest: FO6/SEqdM/+IY9WQjKRtvXGlqHM=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/CommandsPackag
+ eImpl.class
+SHA1-Digest: vuZhntkgT7J3E2fFKVlkjGLS1TA=
+
+Name: plugin.properties
+SHA1-Digest: v/I1H0lFOwpPgp82TKQQi6KKcFQ=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/util/BasicAdapterFa
+ ctory.class
+SHA1-Digest: dvYdMO8JgkxRHEugi6w8tpe/oXQ=
+
+Name: org/eclipse/e4/ui/model/application/commands/util/CommandsAdapte
+ rFactory$1.class
+SHA1-Digest: pN71CUJHFNC6snnfPd8WIk4w4YE=
+
+Name: model/UIElements.genmodel
+SHA1-Digest: WV0K5PLDjSQUKTk8m2twxV+SO1w=
+
+Name: org/eclipse/e4/ui/model/application/ui/util/UiSwitch.class
+SHA1-Digest: XgyUFhJrv0qzl5V1w6NyTr0+6ig=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/Perspective
+ Impl.class
+SHA1-Digest: 6eOpjv7kKoTXNnm8sbzhJuteoj8=
+
+Name: org/eclipse/e4/ui/model/application/ui/SideValue.class
+SHA1-Digest: XAIG3qpSeIEgGwhU7fNEE2OINv8=
+
+Name: plugin.xml
+SHA1-Digest: eGzOw8Vli5FpB3PvAG9QpkZMkWM=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MWindow.class
+SHA1-Digest: tMWnUojjq60cGqRQhjhjUuMe4tQ=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/TrimElementImp
+ l.class
+SHA1-Digest: YZ26p6SEWXR5vrfYkv1F4OJJh4g=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/TrimmedWindowI
+ mpl.class
+SHA1-Digest: SLJLdCR8Tt67HQWLWbaR45GT5e4=
+
+Name: org/eclipse/e4/ui/model/application/impl/ApplicationPackageImpl$
+ Literals.class
+SHA1-Digest: ZO7W2ZeoDQ21xAaFXGsDEp/2p/g=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenuElement.class
+SHA1-Digest: ATz8X7vsE85bs1xyP9w/stkFPYM=
+
+Name: org/eclipse/e4/ui/model/fragment/impl/ModelFragmentsImpl.class
+SHA1-Digest: IEepOs8bRaH6OT9wv9PLq97w6Hg=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/MAdvancedFactory
+ .class
+SHA1-Digest: 4lFOxKTl11RSdxR3EN7gwUVBJFw=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MOpaqueMenuSeparator
+ .class
+SHA1-Digest: ZwMmG0R2/eF9k5pgSfdU7O/MtV0=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolControl.class
+SHA1-Digest: gylHDxUdiGSLCI8X3MtQrUowpo0=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MRenderedToolBar.cla
+ ss
+SHA1-Digest: vG6igHTHVcvS6PoyFXD7fUt6ZxA=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/BasicFactoryIm
+ pl.class
+SHA1-Digest: NLIrEz6qaPupa+BQReH0A76168k=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/PopupMenuImpl.c
+ lass
+SHA1-Digest: q6lTtcW4eenNIql6dZvZrxS89MA=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/UiFactoryImpl.class
+SHA1-Digest: otPEJLHyUe6NA9g/GwNP4ijV7LA=
+
+Name: org/eclipse/e4/ui/model/fragment/impl/FragmentPackageImpl.class
+SHA1-Digest: XuFv1Yjd5Q/9K8Usq77570wJFy0=
+
+Name: org/eclipse/e4/ui/model/fragment/impl/ModelFragmentImpl.class
+SHA1-Digest: j6EWv95kBv8qW4fimNyyzR61Pks=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/GenericStackImpl.cla
+ ss
+SHA1-Digest: CbGm26HjMr1N+y2+XfwdT62HzKE=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MDirectToolItem.clas
+ s
+SHA1-Digest: PtpWp3g12qUHra4iQlfH+T3sulc=
+
+Name: org/eclipse/e4/ui/model/application/commands/util/CommandsAdapte
+ rFactory.class
+SHA1-Digest: SONKShrx9wfKSmVrXckDKYAffak=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenuSeparator.class
+SHA1-Digest: GAOHDCVnimU8qRfJd9CGixgI5mQ=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/impl/PartDe
+ scriptorImpl.class
+SHA1-Digest: ygv60cwZETJ3833wfKgs0guI8tU=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/util/AdvancedAda
+ pterFactory.class
+SHA1-Digest: u/Thk8foowKofWDusLGw3HMoOR0=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/PartSashContai
+ nerImpl.class
+SHA1-Digest: 1EkToJPh+ZfZVsmPiuQ14ARH/aw=
+
+Name: org/eclipse/e4/ui/model/application/MApplicationElement.class
+SHA1-Digest: bxD2R7ZltoFValDQCN1QVbQ+eO0=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuImpl.class
+SHA1-Digest: 5jzlLAiHUFL8L7aUzZmCKWSdm8M=
+
+Name: org/eclipse/e4/ui/model/application/impl/ContributionImpl.class
+SHA1-Digest: cIlNS6/7zNzmWd/TNtJA363jq/s=
+
+Name: org/eclipse/e4/ui/model/application/impl/ApplicationFactoryImpl.
+ class
+SHA1-Digest: jJ7fpBOAYkUiDURH3ctUYa1Ztxk=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/PartImpl.class
+SHA1-Digest: ubkb/Tx7HTNmeLWyyA8MfO/9JQo=
+
+Name: org/eclipse/e4/ui/model/application/ui/MExpression.class
+SHA1-Digest: Miex6jNyzO5Fd70FL5UTI8wMe+I=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/UiPackageImpl$Litera
+ ls.class
+SHA1-Digest: fE2RW4bvIaF1y5tZksSc0uZz/Qo=
+
+Name: org/eclipse/e4/ui/model/application/util/ApplicationAdapterFacto
+ ry$1.class
+SHA1-Digest: B6JSuiFMoLn+mNLznJWFldFXQQw=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/AdvancedFac
+ toryImpl.class
+SHA1-Digest: yVcuErqZUpdT+rMXfzCF6YXWo34=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/BasicPackageIm
+ pl.class
+SHA1-Digest: z9Ums7G/KYBkRetiZQiBsKiMusI=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/RenderedToolBar
+ Impl.class
+SHA1-Digest: 77oXP91RAsTjIgAaYWz4GiHJea0=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/HandledToolItem
+ Impl.class
+SHA1-Digest: JDDowWVmlM0jzw70TUcz3yWbKOA=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuFactoryImpl
+ .class
+SHA1-Digest: 5BY8T31z4UnmsPESqDUy67icmyc=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/BindingContext
+ Impl.class
+SHA1-Digest: i0IMJdvTgZGFiZDOLi4owoNOiBs=
+
+Name: org/eclipse/e4/ui/model/application/commands/MKeySequence.class
+SHA1-Digest: V4UXpe1GS7/lArPwc6+3UysZM/U=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MHandledItem.class
+SHA1-Digest: EhurhqSXQtt18b5FrdiJVAPhHXE=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/TrimBarImpl.cl
+ ass
+SHA1-Digest: JPUzohjAOygz60IU0IJnLnTt9Gk=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/UiPackageImpl.class
+SHA1-Digest: o/izIyL1OmDm5HJPCerds7R1QxQ=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolBarContribution
+ s.class
+SHA1-Digest: Vg5hy68Ek3LNRbKsPtm709Utrp4=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolBarSeparator.cl
+ ass
+SHA1-Digest: MGYq2LcdZ8ABXMqVSEW9siXjoaE=
+
+Name: org/eclipse/e4/ui/model/application/commands/MHandler.class
+SHA1-Digest: 9Fn9Q/YXZacX0UsLQfvG9M+gYL4=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MPartStack.class
+SHA1-Digest: 2mIOU68l5UJz4J+LyC/k9ewKJG8=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MOpaqueToolItem.clas
+ s
+SHA1-Digest: VExWnfHWjoVZ5uDeV3VCnh44jkI=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ToolBarSeparato
+ rImpl.class
+SHA1-Digest: WFlxeIHh0StN86lyPXWHAxgRZyg=
+
+Name: org/eclipse/e4/ui/model/fragment/impl/FragmentPackageImpl$Litera
+ ls.class
+SHA1-Digest: MhzmKXfxMQqQTaecdLXd1EpMwJ0=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MItem.class
+SHA1-Digest: TSXM3hIdQ4xpQLidqH9zElfQ8c4=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/GenericTileImpl.clas
+ s
+SHA1-Digest: 7qPpVTjeI00DHDpR44D4rjWkjng=
+
+Name: org/eclipse/e4/ui/model/application/impl/AddonImpl.class
+SHA1-Digest: +J0b027Akxo8limSbN71lFBkNgk=
+
+Name: org/eclipse/e4/ui/model/internal/ModelUtils.class
+SHA1-Digest: mbjIC6BhmyjKk6wTF9+J1L+Iivs=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/Placeholder
+ Impl.class
+SHA1-Digest: I81buywB9ls15BRTwrO77KsE908=
+
+Name: model/ModelFragment.genmodel
+SHA1-Digest: cwtVnGqqbe4NIojDxRPYQ/FUaJ8=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/util/MenuAdapterFact
+ ory$1.class
+SHA1-Digest: XplW5sPxeKLlBU//wkU7SPYiyvQ=
+
+Name: org/eclipse/e4/ui/model/application/impl/ApplicationPackageImpl.
+ class
+SHA1-Digest: gA0ofV5BDusF2AUEq2tg4C2j9IU=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/MPerspectiveStac
+ k.class
+SHA1-Digest: XaGsQ6LSbyfVFoUEWfV7nWZgjJY=
+
+Name: org/eclipse/e4/ui/model/application/impl/ApplicationImpl.class
+SHA1-Digest: oD7I0jbUSaQ+VTBYN+0eZedql2U=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/Perspective
+ StackImpl.class
+SHA1-Digest: H3w3XAuaGLS8g3VGh5QaJwZDLIs=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/WindowImpl.cla
+ ss
+SHA1-Digest: 8YP2toBOR2JOC2VIkFhYL1tT3+o=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/AdvancedPac
+ kageImpl.class
+SHA1-Digest: WYVSyAapV1ZytZbReaRihmXkhqM=
+
+Name: org/eclipse/e4/ui/model/fragment/MModelFragments.class
+SHA1-Digest: 8noV2f26K4YNZ1t23m40ifLF3/o=
+
+Name: org/eclipse/e4/ui/model/application/commands/MBindingTableContai
+ ner.class
+SHA1-Digest: s8BhWlSEJo8dhKhKPBAVRwoLNaA=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuPackageImpl
+ .class
+SHA1-Digest: EcPqMD1UvQo8vrba+cvVLQnPcQA=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/KeyBindingImpl
+ .class
+SHA1-Digest: mKXHfxZUn2dOPujhPJOdZ/+ffiM=
+
+Name: about.html
+SHA1-Digest: +KDQabAA/C3O/NP2n7v/WkoTZVo=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MHandledToolItem.cla
+ ss
+SHA1-Digest: TBc/ymYhWvTmHH6kC6NwAsCObP4=
+
+Name: org/eclipse/e4/ui/model/fragment/MStringModelFragment.class
+SHA1-Digest: 7rNw2ldRsLt6XSWXwk8LmRTJDLI=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MTrimBar.class
+SHA1-Digest: 0g+KrXRVg3kn+KAvv0vJapaW3Yc=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/HandlerImpl.cl
+ ass
+SHA1-Digest: Z/BCus7wEMcjSAFS2/Av24iqP6w=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/impl/PartStackImpl.
+ class
+SHA1-Digest: LRYa0kPaWkiesRaWQgIvrbSbIok=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/MArea.class
+SHA1-Digest: TpsJ0ats6AraRrCeicDbbw3iJS4=
+
+Name: org/eclipse/e4/ui/model/application/ui/MGenericStack.class
+SHA1-Digest: mPKkJUADeLijqB5oH3gRfzWii78=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MMenuItem.class
+SHA1-Digest: vXCr2fPhxJyb4TmlflR5WzdEuCc=
+
+Name: org/eclipse/e4/ui/model/fragment/MFragmentFactory.class
+SHA1-Digest: B0h+TIHL6lso5X73I35lI7lZqJc=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/MenuItemImpl.cl
+ ass
+SHA1-Digest: N5SaDC//MmxYTEeBiqvHBfiRpaY=
+
+Name: org/eclipse/e4/ui/model/application/ui/MGenericTile.class
+SHA1-Digest: 90wrxhVZOAS/X1Dlu0rtGCRwXQk=
+
+Name: org/eclipse/e4/ui/model/application/MAddon.class
+SHA1-Digest: onuTnXTGbyTSIQKveKVUHDtWRwY=
+
+Name: org/eclipse/e4/ui/model/application/commands/MBindings.class
+SHA1-Digest: vjaj+HEtLMX+GgF4Ys+Y8ePG8MQ=
+
+Name: model/UIElements.ecorediag
+SHA1-Digest: 52XKWSymIGOANhii+r+LjrQlNQw=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ToolBarElementI
+ mpl.class
+SHA1-Digest: cvm51QaO7cYQ1qmeQXK9cMa8SiQ=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/MPlaceholder.cla
+ ss
+SHA1-Digest: rsEfPya2mPGUCrgNkoNbu9AShbk=
+
+Name: org/eclipse/e4/ui/model/application/commands/MHandlerContainer.c
+ lass
+SHA1-Digest: nq4heX5VT2kojgAVp+8zJIpEVqY=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/MPerspective.cla
+ ss
+SHA1-Digest: d86LqHQtDf9b4KpLUz5+mRuBwKc=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MPart.class
+SHA1-Digest: c1QZa0yBXpxIa9DOs5eEnmw1CN4=
+
+Name: model/UIElements.ecore
+SHA1-Digest: ADSKxqHrFAA2Ik8ly3nzaP1hvC4=
+
+Name: org/eclipse/e4/ui/model/application/ui/impl/ExpressionImpl.class
+SHA1-Digest: 0Ei2dfirD8iEIKYmsW1oGRP57V8=
+
+Name: org/eclipse/e4/ui/model/application/ui/MSnippetContainer.class
+SHA1-Digest: leOlWnBzHReq2VaCdPK+BvwgQ0I=
+
+Name: org/eclipse/e4/ui/model/application/commands/util/CommandsSwitch
+ .class
+SHA1-Digest: XuLjWnfF9CwWoRip4aXCm1vKZDI=
+
+Name: org/eclipse/e4/ui/model/fragment/MModelFragment.class
+SHA1-Digest: nMH3Kek6W4MJABuZmAo2UM/qlLs=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MInputPart.class
+SHA1-Digest: KrBPgpDrNy/lThiOR55ismx7mdM=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ItemImpl.class
+SHA1-Digest: kH532xRmGoIW26/mE1QRGNZrTjM=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MOpaqueMenu.class
+SHA1-Digest: NRm0ax+dtEVrq68eSXB+PYOVQyY=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/MToolBarContribution
+ .class
+SHA1-Digest: Bi3nvHAF4JYyJffV44TPwMs69b0=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MPartSashContainer.
+ class
+SHA1-Digest: YvI67xnafylqv0QfELJLb4l7HTA=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/util/BasicA
+ dapterFactory.class
+SHA1-Digest: 7qfzQCnsz/Zww5Uq5xzNr0UAp1w=
+
+Name: org/eclipse/e4/ui/model/application/ui/advanced/impl/AdvancedPac
+ kageImpl$Literals.class
+SHA1-Digest: BTf75VG6frQ9oHZJvkYqiaN1Mdw=
+
+Name: org/eclipse/e4/ui/model/application/commands/impl/ParameterImpl.
+ class
+SHA1-Digest: WRxF8de3am+XuZoHfDmr++K+LGM=
+
+Name: org/eclipse/e4/ui/model/application/descriptor/basic/impl/BasicP
+ ackageImpl$Literals.class
+SHA1-Digest: 74dHKdtMvP7zj/WyqAlSC9eyckY=
+
+Name: model/ModelFragment.ecore
+SHA1-Digest: IOR7UM/5I1WdYdwQtWpWyn+PDd4=
+
+Name: org/eclipse/e4/ui/model/application/commands/MKeyBinding.class
+SHA1-Digest: mm3kX+sZsUVV+t858TD+0giZTQk=
+
+Name: org/eclipse/e4/ui/model/application/ui/basic/MBasicFactory.class
+SHA1-Digest: FCn1BoxlHbCUpbQbnCV3r+aS32g=
+
+Name: org/eclipse/e4/ui/model/application/ui/util/UiAdapterFactory$1.c
+ lass
+SHA1-Digest: Y/8bTkps6Sj/q1bkIBSL0nfeeRk=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/HandledItemImpl
+ .class
+SHA1-Digest: 4DYg2J9hu3dVaP/mDdGu+gMbpSE=
+
+Name: org/eclipse/e4/ui/model/application/ui/MElementContainer.class
+SHA1-Digest: ZBwo7Y9LKT0Pai8libCnjD+L3n8=
+
+Name: org/eclipse/e4/ui/model/application/ui/menu/impl/ToolItemImpl.cl
+ ass
+SHA1-Digest: 8YfZS8m87S167VzFPW8zu6ndwcQ=
+
