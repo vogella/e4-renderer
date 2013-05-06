@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="__I0T8B1mEeKC4ZyUauYotw" elementId="org.eclipse.e4.ide.application">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="__I07AB1mEeKC4ZyUauYotw" label="com.vogella.e4.model.app" width="500" height="400"/>
+<application:Application xmi:version="2.0" 
+	xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" 
+	xmlns:uiextensions="http://www.vogella.com/uiextensions" 
+	xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="__I0T8B1mEeKC4ZyUauYotw" elementId="org.eclipse.e4.ide.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="__I07AB1mEeKC4ZyUauYotw" label="com.vogella.e4.model.app" width="500" height="400">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_1KW-0CkvEeKDjancxhaNVA" elementId="com.vogella.e4.model.app.partsashcontainer.0">
+      <children xsi:type="uiextensions:MyOwnPartStack" xmi:id="_ssOfcCkwEeKDjancxhaNVA" elementId="com.vogella.e4.model.app.partstack.0">
+        <children xsi:type="basic:Part" xmi:id="_3xuCoCkvEeKDjancxhaNVA" elementId="com.vogella.e4.model.app.part.0" contributionURI="bundleclass://com.vogella.e4.model.app/com.vogella.e4.model.app.parts.Part1" label="Part 1"/>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_tN5pICkwEeKDjancxhaNVA" elementId="com.vogella.e4.model.app.partstack.1">
+        <children xsi:type="basic:Part" xmi:id="_4Lje8CkvEeKDjancxhaNVA" elementId="com.vogella.e4.model.app.part.1" contributionURI="bundleclass://com.vogella.e4.model.app/com.vogella.e4.model.app.parts.Part1" label="Part2"/>
+      </children>
+    </children>
+  </children>
   <addons xmi:id="__I07AR1mEeKC4ZyUauYotw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="__I07Ah1mEeKC4ZyUauYotw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="__I07Ax1mEeKC4ZyUauYotw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

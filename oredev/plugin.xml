@@ -5,11 +5,11 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            name="com.vogella.e4.model.app"
+            name="oredev"
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
          <property
                name="RICH_SAMPLE"
-               value="FALSE">
+               value="TRUE">
          </property>
          <property
                name="clearPersistedState"
@@ -17,11 +17,11 @@
          </property>
          <property
                name="applicationCSS"
-               value="platform:/plugin/com.vogella.e4.model.app/css/default.css">
+               value="platform:/plugin/oredev/css/default.css">
          </property>
          <property
                name="appName"
-               value="com.vogella.e4.model.app">
+               value="oredev">
          </property>
       </product>
    </extension>

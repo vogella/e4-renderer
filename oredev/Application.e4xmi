@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_SLTf4Cm8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.ide.application" bindingContexts="_SLTf6Cm8EeKBsuNQ_w91CA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_SLTf4Sm8EeKBsuNQ_w91CA" label="oredev" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_SLUG9ym8EeKBsuNQ_w91CA">
+      <children xsi:type="advanced:Perspective" xmi:id="_SLUG-Cm8EeKBsuNQ_w91CA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_SLUG-Sm8EeKBsuNQ_w91CA">
+          <children xsi:type="basic:PartStack" xmi:id="_SLUG-im8EeKBsuNQ_w91CA">
+            <children xsi:type="basic:Part" xmi:id="_SLUG-ym8EeKBsuNQ_w91CA" contributionURI="bundleclass://oredev/oredev.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_SLUG8Cm8EeKBsuNQ_w91CA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_SLUG8Sm8EeKBsuNQ_w91CA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SLUG8im8EeKBsuNQ_w91CA" label="Open" iconURI="platform:/plugin/oredev/icons/sample.gif" command="_SLTf7ym8EeKBsuNQ_w91CA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SLUG8ym8EeKBsuNQ_w91CA" label="Save" iconURI="platform:/plugin/oredev/icons/save_edit.gif" command="_SLTf8im8EeKBsuNQ_w91CA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SLUG9Cm8EeKBsuNQ_w91CA" label="Quit" command="_SLTf6ym8EeKBsuNQ_w91CA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_SLUG9Sm8EeKBsuNQ_w91CA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SLUG9im8EeKBsuNQ_w91CA" label="About" command="_SLTf9Sm8EeKBsuNQ_w91CA"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_SLUG_Cm8EeKBsuNQ_w91CA">
+      <children xsi:type="menu:ToolBar" xmi:id="_SLUG_Sm8EeKBsuNQ_w91CA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_SLUG_im8EeKBsuNQ_w91CA" iconURI="platform:/plugin/oredev/icons/sample.gif" command="_SLTf7ym8EeKBsuNQ_w91CA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_SLUG_ym8EeKBsuNQ_w91CA" iconURI="platform:/plugin/oredev/icons/save_edit.gif" command="_SLTf8im8EeKBsuNQ_w91CA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_SLTf7Cm8EeKBsuNQ_w91CA" contributionURI="bundleclass://oredev/oredev.handlers.QuitHandler" command="_SLTf6ym8EeKBsuNQ_w91CA"/>
+  <handlers xmi:id="_SLTf8Cm8EeKBsuNQ_w91CA" contributionURI="bundleclass://oredev/oredev.handlers.OpenHandler" command="_SLTf7ym8EeKBsuNQ_w91CA"/>
+  <handlers xmi:id="_SLTf8ym8EeKBsuNQ_w91CA" contributionURI="bundleclass://oredev/oredev.handlers.SaveHandler" command="_SLTf8im8EeKBsuNQ_w91CA"/>
+  <handlers xmi:id="_SLTf9im8EeKBsuNQ_w91CA" contributionURI="bundleclass://oredev/oredev.handlers.AboutHandler" command="_SLTf9Sm8EeKBsuNQ_w91CA"/>
+  <bindingTables xmi:id="_SLTf7Sm8EeKBsuNQ_w91CA" bindingContext="_SLTf6Cm8EeKBsuNQ_w91CA">
+    <bindings xmi:id="_SLTf7im8EeKBsuNQ_w91CA" keySequence="M1+Q" command="_SLTf6ym8EeKBsuNQ_w91CA"/>
+    <bindings xmi:id="_SLTf8Sm8EeKBsuNQ_w91CA" keySequence="M1+O" command="_SLTf7ym8EeKBsuNQ_w91CA"/>
+    <bindings xmi:id="_SLTf9Cm8EeKBsuNQ_w91CA" keySequence="M1+S" command="_SLTf8im8EeKBsuNQ_w91CA"/>
+    <bindings xmi:id="_SLTf9ym8EeKBsuNQ_w91CA" keySequence="M1+A" command="_SLTf9Sm8EeKBsuNQ_w91CA"/>
+  </bindingTables>
+  <rootContext xmi:id="_SLTf6Cm8EeKBsuNQ_w91CA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_SLTf6Sm8EeKBsuNQ_w91CA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_SLTf6im8EeKBsuNQ_w91CA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_SLTf6ym8EeKBsuNQ_w91CA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_SLTf7ym8EeKBsuNQ_w91CA" elementId="oredev.open" commandName="openCommand"/>
+  <commands xmi:id="_SLTf8im8EeKBsuNQ_w91CA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_SLTf9Sm8EeKBsuNQ_w91CA" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_SLTf4im8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_SLTf4ym8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_SLTf5Cm8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_SLTf5Sm8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_SLTf5im8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_SLTf5ym8EeKBsuNQ_w91CA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

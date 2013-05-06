@@ -12,7 +12,7 @@ public class MyRendererFactory extends WorkbenchRendererFactory {
 
 	@Override
 	public AbstractPartRenderer getRenderer(MUIElement uiElement, Object parent) {
-
+		System.out.println("called");
 		if (uiElement instanceof MyOwnPartStack) {
 			if (partStackRenderer == null) {
 				partStackRenderer = new MyOwnStackRenderer();
